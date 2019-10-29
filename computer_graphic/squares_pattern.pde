@@ -21,8 +21,8 @@ void setup() {
 
   int a=0;
   int b=0;
-  for (int i=0; i<1; i++) {
-    square();
+  for (int i=0; i<35; i++) {
+    square(a, b);
     if (a<600) {
       a+=100;
     } else {
@@ -30,26 +30,24 @@ void setup() {
       a=0;
     }
   }
-
-  void square() {
+};
+  void square(int a, int b) {
     pushMatrix();
     translate(a, b);
 
     int startx=int(random(30, 60));
     int starty=int(random(30, 60));
     int num_squares= int(random(1, 10));
-    print("num squares is: " +num_squares);
     int size = 20;
     int new_startx=startx;
     int new_starty=starty;
     for (int j=0; j<num_squares; j++) {
-
-      int dist_x= startx/num_squares; //distance between each square to the left edge
-      int dist_y= starty/num_squares; //distance between each square to the upper edge
+      int dist_x= (startx/num_squares); 
+      int dist_y= (starty/num_squares); //distance between each square to the upper edge
       int dist_y2 = (100-(starty+20))/num_squares; //distance between each square to lower edge
 
       square(new_startx, new_starty, size);
-      size+= (dist_y+dist_y2);
+      size+= dist_y+dist_y2;
 
       new_startx-= dist_x;
       new_starty-=dist_y;
