@@ -18,7 +18,7 @@ void setup() {
       x=0;
     }
   }
-
+//calls the square function and translates it so that all fields are filled
   int a=0;
   int b=0;
   for (int i=0; i<35; i++) {
