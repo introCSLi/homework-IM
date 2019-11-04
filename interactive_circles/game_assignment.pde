@@ -1,36 +1,54 @@
 void setup() {
   background(255);
+  noFill();
   size(1200, 700);
+  int center_x=width/2;
+  int center_y=height/2;
+  for (int i=0; i < myCircleArray.length; i++) {
+    myCircleArray[i] = new MovingCircle(center_x, center_y);
+  }
 }
 
-MovingCircle myCircle = new MovingCircle(25, 72);
 
+MovingCircle[] myCircleArray = new MovingCircle[10];
 
 class MovingCircle {
 
   int max_radius=300;
-  int max_linewidth=100;
+//  int max_linewidth=100;
   int center_x=width/2;
   int center_y=height/2;
+  float delay= random(1)*100+5;
+  float minSize=random(20, 60);
+  float maxSize=random(100, 500);
+  float sizeSpeed = 0.025;
+  float size=10;
 
 
-  MovingCircle(center_x, center_y) {
+  MovingCircle(int center_x, int center_y) {
     float radius = random(1)*max_radius;
-    float linewidth= random(1)*max_linewidth;
-    float delay= random(1)*100+5;
+    
   }
 
   void update() {
+    float linewidth= sin(frameCount*sizeSpeed)*20+20;
+    strokeWeight(linewidth);
+    size = map(sin(frameCount * sizeSpeed), -1.0, 1.0, minSize, maxSize);
     center_x+=(mouseX - center_x)/delay;
     center_y+= (mouseY - center_y)/delay;
-    float scale=sin(millis());
-    print(scale);
     color(0);
   }
 
   void drawCircle() {
-  circle(center_x, center_y, scale);
+    circle(center_x, center_y, size);
   }
-  
-} 
+};
+
+void draw() {
+  // Always erase the screen first
+  background(255);
+  for (int i=0; i < myCircleArray.length; i++) {
+    myCircleArray[i].update();
+    myCircleArray[i].drawCircle();
+  }
 }
