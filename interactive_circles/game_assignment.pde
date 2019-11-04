@@ -27,6 +27,7 @@ class MovingCircle {
 
   MovingCircle(int center_x, int center_y) {
     float radius = random(1)*max_radius;
+    color(random(255), random(255), random(255));
     
   }
 
@@ -36,7 +37,7 @@ class MovingCircle {
     size = map(sin(frameCount * sizeSpeed), -1.0, 1.0, minSize, maxSize);
     center_x+=(mouseX - center_x)/delay;
     center_y+= (mouseY - center_y)/delay;
-    color(0);
+  //  color(0);
   }
 
   void drawCircle() {
