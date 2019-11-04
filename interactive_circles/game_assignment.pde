@@ -15,7 +15,7 @@ MovingCircle[] myCircleArray = new MovingCircle[10];
 class MovingCircle {
 
   int max_radius=300;
-//  int max_linewidth=100;
+  //  int max_linewidth=100;
   int center_x=width/2;
   int center_y=height/2;
   float delay= random(1)*100+5;
@@ -27,17 +27,20 @@ class MovingCircle {
 
   MovingCircle(int center_x, int center_y) {
     float radius = random(1)*max_radius;
-    color(random(255), random(255), random(255));
-    
+
   }
 
   void update() {
-    float linewidth= sin(frameCount*sizeSpeed)*20+20;
-    strokeWeight(linewidth);
+    //oscillating width of the circles
+    float linewidth= sin(frameCount*sizeSpeed)*20+20;         
+    strokeWeight(linewidth);      
+    //oscillating size of circles
     size = map(sin(frameCount * sizeSpeed), -1.0, 1.0, minSize, maxSize);
+    //making the circles follow the cursor, delay used so that some are slower to follow
     center_x+=(mouseX - center_x)/delay;
     center_y+= (mouseY - center_y)/delay;
-  //  color(0);
+    //make color random
+    stroke(random(200), random(0), random(200));
   }
 
   void drawCircle() {
@@ -48,7 +51,8 @@ class MovingCircle {
 void draw() {
   // Always erase the screen first
   background(255);
-  for (int i=0; i < myCircleArray.length; i++) {
+  //updating each of the circles
+  for (int i=0; i < myCircleArray.length; i++) {  
     myCircleArray[i].update();
     myCircleArray[i].drawCircle();
   }
