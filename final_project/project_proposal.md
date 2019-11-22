@@ -23,7 +23,7 @@ Since I want to record a conversation, the project would need to be located in a
 I am thinking to use two different microphones as inputs to processing, and if that doesn’t work, I would just one microphone to record both voices. I need to borrow an I pad from the equipment center, because I need a screen without the keyboard. 
 Additionally, I will need a photo printer, as this is a very important part of the idea. If I cannot manage to get a photo printer, I will simply print it on normal A4 paper. 
 
-**	List of parts you need that are not in your kit**
+**List of parts you need that are not in your kit**
 
 Acryllic glass, buttons, microphones(?), photo printer
 
@@ -32,7 +32,7 @@ Acryllic glass, buttons, microphones(?), photo printer
 
 The Arduino program will simply pass the input of button presses and audio stream to processing. 
 
-**Description of the Processing program **
+**Description of the Processing program**
 
 The main program will use the audiostream as an input and get the frequency and amplitude from it (I already wrote the code for that and it works well). 
 This information is used in creating an image. 
