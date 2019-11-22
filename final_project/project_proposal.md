@@ -28,7 +28,7 @@ Additionally, I will need a photo printer, as this is a very important part of t
 Acryllic glass, buttons, microphones(?), photo printer
 
 
-**Description of the Arduino program **
+**Description of the Arduino program**
 
 The Arduino program will simply pass the input of button presses and audio stream to processing. 
 
