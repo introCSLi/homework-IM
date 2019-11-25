@@ -13,6 +13,9 @@ There will be different prompts on the screen, such as
 The users can decide to follow these questions or have a conversation about anything else they like. 
 If they decide to follow these questions, there will be a “next” button which makes the next question appear. The duration of this conversation will be set to a specific time. I will have to determine the exact time after some user testing, but I was thinking of around 3 minutes for the entire conversation. 
 The conversation will be analyzed by frequency and amplitude, which will create an image that will be automatically printed by the end of the conversation. The creation of the image is visible the entire time on the screen.
+The inspiration for this project came from the audiovisual project "Hate in Situ" found here https://www.youtube.com/watch?v=mMIHdtjvLhs 
+
+
 
 ![](/final_project/ProjectVisual.png)
 
