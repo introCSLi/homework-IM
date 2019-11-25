@@ -15,7 +15,8 @@ The users can decide to follow these questions or have a conversation about anyt
 If they decide to follow these questions, there will be a “next” button which makes the next question appear. The duration of this conversation will be set to a specific time. I will have to determine the exact time after some user testing, but I was thinking of around 3 minutes for the entire conversation. 
 The conversation will be analyzed by frequency and amplitude, which will create an image that will be automatically printed by the end of the conversation. The creation of the image is visible the entire time on the screen.
 
-![](final_project/Project_Visual.png)
+![](final_project/Project Visual.png)
+
 
 
 **Rough sketch of the entire project**
