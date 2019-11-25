@@ -5,11 +5,10 @@
 My project idea is to use audio visualization to create a tangible manifestation of a conversation between two friends. Thereby, I want to spark an honest, appreciative exchange, resulting in a snapshot of a friendship. 
 There will be different prompts on the screen, such as 
 
-“What was your first impression of each other?”
-
 “What is the favorite memory you have together?”
 
-“Is there anything you want to tell your friend?’
+"What do you appreciate about your friendship?"
+
 
 The users can decide to follow these questions or have a conversation about anything else they like. 
 If they decide to follow these questions, there will be a “next” button which makes the next question appear. The duration of this conversation will be set to a specific time. I will have to determine the exact time after some user testing, but I was thinking of around 3 minutes for the entire conversation. 
