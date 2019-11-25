@@ -25,6 +25,10 @@ Since I want to record a conversation, the project would need to be located in a
 I am thinking to use two different microphones as inputs to processing, and if that doesn’t work, I would just one microphone to record both voices. I need to borrow an I pad from the equipment center, because I need a screen without the keyboard. 
 Additionally, I will need a photo printer, as this is a very important part of the idea. If I cannot manage to get a photo printer, I will simply print it on normal A4 paper. 
 
+**Block Diagram**
+![](/final_project/BlockDiagram.png)
+
+
 **List of parts you need that are not in your kit**
 
 Acryllic glass, buttons, microphones(?), photo printer
