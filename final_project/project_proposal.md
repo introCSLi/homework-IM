@@ -46,6 +46,8 @@ This information is used in creating an image.
 **Things you need to learn that you don’t yet know**
 
 How to control a printer using processing
+
+
 How to access amplitudes at specific frequencies in processing
 
 **Areas of greatest concern**
